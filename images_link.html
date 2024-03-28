@@ -5,91 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Links</title>
     <style>
+        /* Add some basic styling for better presentation */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
         }
         header {
             background-color: #333;
             color: #fff;
-            padding: 20px;
+            padding: 10px 0;
             text-align: center;
         }
         nav {
-            text-align: center;
-            background-color: #444;
-            padding: 10px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px;
-            margin: 0 5px;
-        }
-        nav a:hover {
-            background-color: #666;
-        }
-        section {
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 800px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
+            background-color: #f4f4f4;
+            padding: 10px 0;
             text-align: center;
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 10px;
+            padding: 20px;
         }
         .gallery img {
             width: 100%;
-            border-radius: 5px;
+            height: auto;
         }
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
+        .menu {
+            text-align: center;
         }
-        li {
+        .menu img {
+            width: 100px;
+            height: auto;
             margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Image Links</h1>
-    </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#menu">Menu</a>
-    </nav>
-    <section id="home">
-        <h2>Home</h2>
-        <p>Welcome to our website! Explore the world of images.</p>
-        <img src="IMAGES/pexels-life-of-pix-7974.jpg" alt="technology photo" width="600" height="500">
-    </section>
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery">
-            <img src="IMAGES/pexels-luis-dalvan-1770809.jpg" alt="Nature 1">
-            <img src="IMAGES/pexels-eberhard-grossgasteiger-707344.jpg" alt="Nature 2">
-            <img src="IMAGES/pexels-michael-block-3225517.jpg" alt="Nature 3">
-        </div>
-    </section>
-    <section id="menu">
-        <h2>Menu</h2>
+
+<header>
+    <h1>Welcome to Image Links</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a> |
+    <a href="#gallery">Gallery</a> |
+    <a href="#menu">Menu</a>
+</nav>
+
+<section id="home">
+    <h2>Home</h2>
+    <p>Welcome to our website! Explore the world through images.</p>
+    <img src="IMAGES/pexels-life-of-pix-7974.jpg" alt="Technology"></a>
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="IMAGES/pexels-eberhard-grossgasteiger-707344.jpg" alt="Nature">
+        <img src="IMAGES/pexels-michael-block-3225517.jpg" alt="Nature">
+        <img src="IMAGES/pexels-luis-dalvan-1770809.jpg" alt="Nature">
+    </div>
+</section>
+
+<section id="menu">
+    <h2>Menu</h2>
+    <div class="menu">
         <ul>
-            <li><img src="IMAGES/pexels-element-digital-775031.jpg" alt="Food 1" width="600" height="500">Food Item 1</li>
-            <li><img src="IMAGES/pexels-jane-trang-doan-1099680.jpg" alt="Food 2" width="600" height="500">Food Item 2</li>
-            <li><img src="IMAGES/pexels-john-finkelstein-1630588.jpg" alt="Food 3" width="600" height="500">Food Item 3</li>
+            <li><img src="IMAGES/pexels-element-digital-775031.jpg" alt="Food 1">Food 1</li>
+            <li><img src="IMAGES/pexels-john-finkelstein-1630588.jpg" alt="Food 2">Food 2</li>
+            <li><img src="IMAGES/pexels-jane-trang-doan-1099680.jpg" alt="Food 3">Food 3</li>
         </ul>
-    </section>
+    </div>
+</section>
+
 </body>
 </html>
